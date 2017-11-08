@@ -16,8 +16,7 @@ steam_client = None
 
 # Read the username in
 def read_username():
-    print("Enter your username:")
-    return input()
+    return input("Enter your username: ")
 
 # Prompt and function for reading the password in
 def read_password():
