@@ -32,8 +32,8 @@ def user_login_init(key):
    steam_client = SteamClient(key)
 
 # Log in to the account
-def user_login(username, password, steamguard):
-    steam_client.login(username, password, steamguard)
+def user_login(username, password, steamguard_path):
+    steam_client.login(username, password, steamguard_path)
 
 # Log out
 def user_logout():

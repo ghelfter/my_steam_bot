@@ -11,6 +11,7 @@ import login
 import keyfile
 
 # Steampy functions
+from steampy.client import SteamClient
 
 # Global variables
 username = None
@@ -52,11 +53,17 @@ def main(argv):
         print("Error, failed to initialize steam client.")
         sys.exit(1)
 
+    try:
+        login.user_login(username, password)
+    except:
+        print("Error, failed to log in.")
+        sys.exit(1)
+
     # After logging in, clear password back to none
     password = None
 
     # Exit the steam client
-    #login.user_logout()
+    login.user_logout()
 
 if __name__ == "__main__":
     main(sys.argv[1:])
