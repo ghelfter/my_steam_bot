@@ -16,3 +16,4 @@ src:
 
 * main.py - Contains the main driver for the code
 * login.py - Contains the code for logging in and out of the staem account
+* keyfile.py - Manages reading the keyfile
